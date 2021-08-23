@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="A_02_FactoryPattern" />
         <module name="A_01_JDBC" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="8">
       <module name="A_01_JDBC" target="8" />
+      <module name="A_02_FactoryPattern" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

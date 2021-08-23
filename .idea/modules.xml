@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/A_01_JDBC/A_01_JDBC.iml" filepath="$PROJECT_DIR$/A_01_JDBC/A_01_JDBC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/A_02_FactoryPattern/A_02_FactoryPattern.iml" filepath="$PROJECT_DIR$/A_02_FactoryPattern/A_02_FactoryPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Spring.iml" filepath="$PROJECT_DIR$/.idea/Spring.iml" />
     </modules>
   </component>

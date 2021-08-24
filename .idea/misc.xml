@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/../Mybatis/A_02_FactoryPattern/pom.xml" />
         <option value="$PROJECT_DIR$/A_02_FactoryPattern/pom.xml" />
         <option value="$PROJECT_DIR$/A_03_SpringIOC/pom.xml" />
+        <option value="$PROJECT_DIR$/A_04_SpringBean/pom.xml" />
       </list>
     </option>
   </component>

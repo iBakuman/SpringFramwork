@@ -83,4 +83,26 @@ public class Client {
         System.out.println("service2 = " + service2);
         System.out.println(service1 == service2);
     }
+
+    /**
+     * 测试单例bean对象的生命周期
+     */
+    @Test
+    public void test7() {
+        IAccountService slife = context.getBean("slifeCycle", IAccountService.class);
+        System.out.println(slife);
+        // 手动销毁容器
+        ((ClassPathXmlApplicationContext)context).close();
+    }
+
+    /**
+     * 测试多例bean对象的生命周期
+     * 结论：执行了两次init方法但是只执行了一次destroy方法
+     */
+    @Test
+    public void test8() {
+        IAccountService plife = context.getBean("plifeCycle", IAccountService.class);
+        System.out.println(plife);
+        ((ClassPathXmlApplicationContext)context).close();
+    }
 }

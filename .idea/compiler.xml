@@ -8,11 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="A_02_FactoryPattern" />
         <module name="A_01_JDBC" />
+        <module name="A_03_SpringIOC" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
-      <module name="A_01_JDBC" target="8" />
-      <module name="A_02_FactoryPattern" target="8" />
+      <module name="A_01_JDBC" target="1.5" />
+      <module name="A_02_FactoryPattern" target="1.5" />
+      <module name="A_03_SpringIOC" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

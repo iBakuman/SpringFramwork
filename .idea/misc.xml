@@ -6,6 +6,7 @@
         <option value="$PROJECT_DIR$/A_01_JDBC/pom.xml" />
         <option value="$PROJECT_DIR$/../Mybatis/A_02_FactoryPattern/pom.xml" />
         <option value="$PROJECT_DIR$/A_02_FactoryPattern/pom.xml" />
+        <option value="$PROJECT_DIR$/A_03_SpringIOC/pom.xml" />
       </list>
     </option>
   </component>

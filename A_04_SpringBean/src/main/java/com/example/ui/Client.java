@@ -44,4 +44,43 @@ public class Client {
         IAccountService accountService3 = context.getBean("accountService3", IAccountService.class);
         System.out.println(accountService3);
     }
+
+    /**
+     * 测试Spring的IOC创建Bean对象时是多例模式还是单例模式
+     * 结论：单例模式
+     */
+    @Test
+    public void test4() {
+        IAccountService service1 = context.getBean("accountService1", IAccountService.class);
+        IAccountService service2 = context.getBean("accountService1", IAccountService.class);
+        System.out.println("service1 = " + service1);
+        System.out.println("service2 = " + service2);
+        System.out.println(service1 == service2);
+    }
+
+    /**
+     * 测试bean标签的scope属性为singleton的情况
+     * 结论：创建的bean对象是单例的
+     */
+    @Test
+    public void test5() {
+        IAccountService service1 = context.getBean("singletonService", IAccountService.class);
+        IAccountService service2 = context.getBean("singletonService", IAccountService.class);
+        System.out.println("service1 = " + service1);
+        System.out.println("service2 = " + service2);
+        System.out.println(service1 == service2);
+    }
+
+    /**
+     * 测试bean标签的scope属性为prototype的情况
+     * 结论：创建的bean对象是多例
+     */
+    @Test
+    public void test6() {
+        IAccountService service1 = context.getBean("prototypeService", IAccountService.class);
+        IAccountService service2 = context.getBean("prototypeService", IAccountService.class);
+        System.out.println("service1 = " + service1);
+        System.out.println("service2 = " + service2);
+        System.out.println(service1 == service2);
+    }
 }

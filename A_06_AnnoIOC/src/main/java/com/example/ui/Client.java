@@ -32,4 +32,23 @@ public class Client {
         System.out.println(service);
     }
 
+    /**
+     * 测试使用注解来注入数据
+     */
+    @Test
+    public void test2() {
+        IAccountService service = context.getBean("accountServiceImpl", IAccountService.class);
+        service.saveAccount();
+        System.out.println(service);
+    }
+
+    /**
+     * 测试Autowired注解遇到多个类型匹配的bean对象时的行为
+     */
+    @Test
+    public void test3() {
+        IAccountService service = context.getBean("accountServiceImpl", IAccountService.class);
+        service.saveAccount();
+        System.out.println(service);
+    }
 }

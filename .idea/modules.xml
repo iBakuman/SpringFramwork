@@ -6,6 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/A_02_FactoryPattern/A_02_FactoryPattern.iml" filepath="$PROJECT_DIR$/A_02_FactoryPattern/A_02_FactoryPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/A_03_SpringIOC/A_03_SpringIOC.iml" filepath="$PROJECT_DIR$/A_03_SpringIOC/A_03_SpringIOC.iml" />
       <module fileurl="file://$PROJECT_DIR$/A_04_SpringBean/A_04_SpringBean.iml" filepath="$PROJECT_DIR$/A_04_SpringBean/A_04_SpringBean.iml" />
+      <module fileurl="file://$PROJECT_DIR$/A_05_DI/A_05_DI.iml" filepath="$PROJECT_DIR$/A_05_DI/A_05_DI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/A_06_AnnoIOC/A_06_AnnoIOC.iml" filepath="$PROJECT_DIR$/A_06_AnnoIOC/A_06_AnnoIOC.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Spring.iml" filepath="$PROJECT_DIR$/.idea/Spring.iml" />
     </modules>
   </component>

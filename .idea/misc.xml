@@ -8,6 +8,8 @@
         <option value="$PROJECT_DIR$/A_02_FactoryPattern/pom.xml" />
         <option value="$PROJECT_DIR$/A_03_SpringIOC/pom.xml" />
         <option value="$PROJECT_DIR$/A_04_SpringBean/pom.xml" />
+        <option value="$PROJECT_DIR$/A_05_DI/pom.xml" />
+        <option value="$PROJECT_DIR$/A_06_AnnoIOC/pom.xml" />
       </list>
     </option>
   </component>

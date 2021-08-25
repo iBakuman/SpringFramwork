@@ -7,8 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="A_02_FactoryPattern" />
+        <module name="A_06_AnnoIOC" />
         <module name="A_01_JDBC" />
         <module name="A_03_SpringIOC" />
+        <module name="A_05_DI" />
         <module name="A_04_SpringBean" />
       </profile>
     </annotationProcessing>
@@ -17,6 +19,9 @@
       <module name="A_02_FactoryPattern" target="1.5" />
       <module name="A_03_SpringIOC" target="8" />
       <module name="A_04_SpringBean" target="8" />
+      <module name="A_05_DI" target="8" />
+      <module name="A_06_AnnoIOC" target="8" />
+      <module name="A_06_AnnotationIOC" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

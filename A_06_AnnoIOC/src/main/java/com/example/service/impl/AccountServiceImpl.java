@@ -2,9 +2,10 @@ package com.example.service.impl;
 
 import com.example.dao.IAccountDao;
 import com.example.service.IAccountService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
 
 /**
  * 账户的业务层实现类
@@ -40,7 +41,17 @@ import org.springframework.stereotype.Service;
  *                   不能单独使用。但是在给方法参数注入时可以
  *              属性：
  *                  value：用于指定注入bean的id
+ *           Resource：
+ *              作用：直接按照bean的id注入，它可以单独使用
+ *              属性：
+ *                  name：用于指定bean的id
+ *           以上三个注入都只能注入其他bean类型的数据，而基本类型和String类型无法使用上述注解实现。另外，集合类型的注入
+ *           只能通过XML实现
  *
+ *           Value
+ *              作用：用于注入基本类型和String类型的数据
+ *              属性：
+ *                  value：用于指定数据的值，它可以使用Spring中的SpEL（语法：${表达式}）
  * @author Avarice
  */
 
@@ -48,15 +59,22 @@ import org.springframework.stereotype.Service;
 @Service // 对于业务层，使用Service注解
 public class AccountServiceImpl implements IAccountService {
 
-    // 明确指明要注入的是id为accountDaoImpl2的bean对象
-    // 将Qualifier注解注释之后再查看test4的运行结果
-    @Autowired
-    @Qualifier("accountDaoImpl2")
+    // 显示指定使用id为accountDaoImp2的bean对象注入
+    @Resource(name = "accountDaoImpl2")
     private IAccountDao accountDaoImpl;
+
+    @Value("龚胜辉")
+    private String name;
+
+    //@Value(20) error
+    @Value("20")
+    private int age;
 
     @Override
     public void saveAccount() {
         System.out.println("Invoking saveAccount in class AccountServiceImpl...");
         accountDaoImpl.saveAccount();
+        System.out.println(name);
+        System.out.println(age);
     }
 }

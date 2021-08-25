@@ -61,4 +61,14 @@ public class Client {
         service.saveAccount();
         System.out.println(service);
     }
+
+    /**
+     * 测试Resource注解和Value注解的使用
+     */
+    @Test
+    public void test5() {
+        IAccountService service = context.getBean("accountServiceImpl", IAccountService.class);
+        service.saveAccount();
+        System.out.println(service);
+    }
 }

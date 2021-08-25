@@ -51,4 +51,14 @@ public class Client {
         service.saveAccount();
         System.out.println(service);
     }
+
+    /**
+     * 测试Qualifier注解的使用
+     */
+    @Test
+    public void test4() {
+        IAccountService service = context.getBean("accountServiceImpl", IAccountService.class);
+        service.saveAccount();
+        System.out.println(service);
+    }
 }

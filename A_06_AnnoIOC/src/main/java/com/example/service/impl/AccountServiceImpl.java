@@ -3,6 +3,7 @@ package com.example.service.impl;
 import com.example.dao.IAccountDao;
 import com.example.service.IAccountService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 /**
@@ -34,6 +35,11 @@ import org.springframework.stereotype.Service;
  *                   则注入失败
  *                   如果
  *              出现位置：可以在变量上也可以在方法上
+ *           Qualifier:
+ *              作用：在按照类中注入的基础之上（要求前面必须使用了Autowired注解）再按照名称注入。它在给类成员注入时
+ *                   不能单独使用。但是在给方法参数注入时可以
+ *              属性：
+ *                  value：用于指定注入bean的id
  *
  * @author Avarice
  */
@@ -42,8 +48,10 @@ import org.springframework.stereotype.Service;
 @Service // 对于业务层，使用Service注解
 public class AccountServiceImpl implements IAccountService {
 
-    // 将变量名改为accountDao再查看test3的运行结果
+    // 明确指明要注入的是id为accountDaoImpl2的bean对象
+    // 将Qualifier注解注释之后再查看test4的运行结果
     @Autowired
+    @Qualifier("accountDaoImpl2")
     private IAccountDao accountDaoImpl;
 
     @Override

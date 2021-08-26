@@ -71,4 +71,28 @@ public class Client {
         service.saveAccount();
         System.out.println(service);
     }
+
+    /**
+     * 测试Scope注解控制bean的作用范围
+     */
+    @Test
+    public void test6() {
+        IAccountService service1 = context.getBean("accountServiceImpl", IAccountService.class);
+        IAccountService service2 = context.getBean("accountServiceImpl", IAccountService.class);
+        // true
+        System.out.println(service2 == service1);
+        IAccountDao dao1 = context.getBean("accountDaoImpl", IAccountDao.class);
+        IAccountDao dao2 = context.getBean("accountDaoImpl", IAccountDao.class);
+        // false
+        System.out.println(dao1 == dao2);
+    }
+
+    @Test
+    public void test7() {
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("bean.xml");
+        IAccountService service = context.getBean("accountServiceImpl", IAccountService.class);
+        service.saveAccount();
+        // 手动关闭
+        context.close();
+    }
 }

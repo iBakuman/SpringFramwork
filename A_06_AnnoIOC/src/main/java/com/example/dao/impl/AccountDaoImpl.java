@@ -1,6 +1,7 @@
 package com.example.dao.impl;
 
 import com.example.dao.IAccountDao;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -9,6 +10,7 @@ import org.springframework.stereotype.Repository;
  */
 
 @Repository // 对于持久层，使用Repository注解配置
+@Scope("prototype")
 public class AccountDaoImpl implements IAccountDao {
     @Override
     public void saveAccount() {

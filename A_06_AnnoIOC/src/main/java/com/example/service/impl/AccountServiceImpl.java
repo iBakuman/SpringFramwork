@@ -3,8 +3,11 @@ package com.example.service.impl;
 import com.example.dao.IAccountDao;
 import com.example.service.IAccountService;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import javax.annotation.Resource;
 
 /**
@@ -52,11 +55,25 @@ import javax.annotation.Resource;
  *              作用：用于注入基本类型和String类型的数据
  *              属性：
  *                  value：用于指定数据的值，它可以使用Spring中的SpEL（语法：${表达式}）
+ *  3.用于改变作用范围的
+ *      它们的作用就和在bean标签中使用scope属性实现的功能是一样的
+ *      Scope
+ *          作用：用于指定bean的作用范围
+ *          属性：
+ *              value：指定范围的取值。常用取值：singleton prototype
+ *
+ *  4.和生命周期相关
+ *      它们的作用就和在bean标签中使用init-method和destroy-method的作用是一样的
+ *      PreDestroy
+ *          作用：用于指定销毁方法
+ *      PostConstruct
+ *          作用：用于指定初始化方法
  * @author Avarice
  */
 
 //@Component
 @Service // 对于业务层，使用Service注解
+@Scope("singleton")
 public class AccountServiceImpl implements IAccountService {
 
     // 显示指定使用id为accountDaoImp2的bean对象注入
@@ -69,6 +86,19 @@ public class AccountServiceImpl implements IAccountService {
     //@Value(20) error
     @Value("20")
     private int age;
+
+    // 为测试PostConstruct注解而写的方法
+    @PostConstruct
+    public void init() {
+        System.out.println("PostConstruct Annotation...");
+    }
+
+    // 为测试PostConstruct注解而写的方法
+    @PreDestroy
+    public void destroy() {
+        System.out.println("PreDestroy Annotation...");
+    }
+
 
     @Override
     public void saveAccount() {

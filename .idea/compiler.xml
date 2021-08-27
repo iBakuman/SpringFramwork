@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="A_08_AccountAnnoIOC" />
         <module name="A_03_SpringIOC" />
         <module name="A_04_SpringBean" />
         <module name="A_02_FactoryPattern" />
@@ -24,6 +25,7 @@
       <module name="A_06_AnnoIOC" target="8" />
       <module name="A_06_AnnotationIOC" target="8" />
       <module name="A_07_AccountXmlIOC" target="8" />
+      <module name="A_08_AccountAnnoIOC" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

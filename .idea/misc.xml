@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/A_05_DI/pom.xml" />
         <option value="$PROJECT_DIR$/A_06_AnnoIOC/pom.xml" />
         <option value="$PROJECT_DIR$/A_07_AccountXmlIOC/pom.xml" />
+        <option value="$PROJECT_DIR$/A_08_AccountAnnoIOC/pom.xml" />
       </list>
     </option>
   </component>

@@ -1,7 +1,6 @@
 package com.example.config;
 
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
 /**
@@ -30,7 +29,6 @@ import org.springframework.context.annotation.Import;
  * @author Avarice
  */
 
-@Configuration
 @ComponentScan({"com.example"})
 @Import(JdbcConfig.class)
 //@ComponentScan(basePackages = {"com.example"}) // 作用同上一行的注解一样

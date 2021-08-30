@@ -1,3 +1,4 @@
+import com.example.config.JdbcConfig;
 import com.example.config.SpringConfig;
 import com.example.dao.impl.AccountDaoImpl;
 import com.example.domain.Account;
@@ -19,7 +20,7 @@ public class AccountServiceImplTest {
 
     @Before
     public void init() {
-        context = new AnnotationConfigApplicationContext(SpringConfig.class);
+        context = new AnnotationConfigApplicationContext(SpringConfig.class, JdbcConfig.class);
     }
 
     /**

@@ -11,7 +11,6 @@ import javax.sql.DataSource;
  * @author Avarice
  * @date 2021/8/30 20:00
  */
-@Configuration
 public class JdbcConfig {
     /**
      * 用于创建一个QueryRunner对象

@@ -2,6 +2,7 @@ package com.example.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 
 /**
  * 该类是一个配置类，和bean.xml的作用是一样的
@@ -21,11 +22,17 @@ import org.springframework.context.annotation.Configuration;
  *          细节：
  *              当我们使用注解配置方法时，如果方法有参数，spring框架会去容器中查找有没有可用的bean对象
  *              查找的方式和Autowired注解的作用是一样的
+ *      4.Import
+ *          作用：英语导入其他的配置类
+ *          属性：
+ *              value：用于指定其他类的字节码。
+ *                  当我们使用Import注解后，有Import注解的类就是父配置类，而导入的都是子配置类
  * @author Avarice
  */
 
 @Configuration
 @ComponentScan({"com.example"})
+@Import(JdbcConfig.class)
 //@ComponentScan(basePackages = {"com.example"}) // 作用同上一行的注解一样
 public class SpringConfig {
 

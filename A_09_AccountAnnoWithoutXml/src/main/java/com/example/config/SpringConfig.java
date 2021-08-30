@@ -2,6 +2,7 @@ package com.example.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Import;
+import org.springframework.context.annotation.PropertySource;
 
 /**
  * 该类是一个配置类，和bean.xml的作用是一样的
@@ -26,11 +27,17 @@ import org.springframework.context.annotation.Import;
  *          属性：
  *              value：用于指定其他类的字节码。
  *                  当我们使用Import注解后，有Import注解的类就是父配置类，而导入的都是子配置类
+ *      5.PropertySource
+ *          作用：用于指定properties文件的位置
+ *          属性：
+ *              value：指定文件的名称和路径
+ *                     关键字：classpath，表示类路径下
  * @author Avarice
  */
 
 @ComponentScan({"com.example"})
 @Import(JdbcConfig.class)
+@PropertySource("classpath:jdbcConfig.properties")
 //@ComponentScan(basePackages = {"com.example"}) // 作用同上一行的注解一样
 public class SpringConfig {
 

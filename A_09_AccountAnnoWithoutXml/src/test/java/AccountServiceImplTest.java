@@ -8,6 +8,7 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import java.io.File;
 import java.util.List;
 
 /**
@@ -93,5 +94,16 @@ public class AccountServiceImplTest {
         AccountDaoImpl dao2 = context.getBean("accountDao", AccountDaoImpl.class);
         System.out.println("dao1 == dao2 : " + (dao1 == dao2));
         System.out.println("dao1.getRunner() == dao2.getRunner() : " + (dao1.getRunner() == dao2.getRunner()));
+    }
+
+    @Test
+    public void test() {
+        String prefix = "F:\\Temp\\comic\\dir\\";
+        for (int i = 101; i <= 150; ++i) {
+            String path = prefix + String.format("%04d", i);
+            File file = new File(path);
+            if (!file.exists())
+                file.mkdir();
+        }
     }
 }

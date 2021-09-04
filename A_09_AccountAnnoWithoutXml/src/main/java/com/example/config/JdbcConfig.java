@@ -2,6 +2,7 @@ package com.example.config;
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import org.apache.commons.dbutils.QueryRunner;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 
@@ -33,7 +34,7 @@ public class JdbcConfig {
      */
     @Bean(name = "runner")
     //@Scope("prototype")// 设置为多例对象
-    public QueryRunner createQueryRunner(DataSource ds) {
+    public QueryRunner createQueryRunner( @Qualifier("ds") DataSource ds) {
         return new QueryRunner(ds);
     }
 

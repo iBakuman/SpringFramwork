@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/A_07_AccountXmlIOC/pom.xml" />
         <option value="$PROJECT_DIR$/A_08_AccountAnnoIOC/pom.xml" />
         <option value="$PROJECT_DIR$/A_09_AccountAnnoWithoutXml/pom.xml" />
+        <option value="$PROJECT_DIR$/A_10_SpringWithJunit/pom.xml" />
       </list>
     </option>
   </component>

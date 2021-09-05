@@ -10,12 +10,16 @@
     <bean id="accountService" class="com.example.service.impl.AccountServiceImpl">
         <!--注入dao-->
         <property name="accountDao" ref="accountDao"/>
+        <!-- 注入事务管理器 -->
+        <property name="txManager" ref="txManager"/>
     </bean>
 
     <!--配置dao对象-->
     <bean id="accountDao" class="com.example.dao.impl.AccountDaoImpl">
         <!--注入QueryRunner-->
         <property name="runner" ref="runner"/>
+        <!-- 注入ConnectionUtils -->
+        <property name="connectionUtils" ref="connectionUtils"/>
     </bean>
 
     <!--配置QueryRunner-->
@@ -34,6 +38,15 @@
         <property name="password" value="193196"/>
     </bean>
 
+    <!-- 配置Connection的工具类ConnectionUtils -->
+    <bean id="connectionUtils" class="com.example.utils.ConnectionUtils">
+        <!-- 注入数据源 -->
+        <property name="dataSource" ref="ds"/>
+    </bean>
 
+    <!-- 配置事务管理器 -->
+    <bean id="txManager" class="com.example.utils.TransactionManager">
+        <property name="connectionUtils" ref="connectionUtils"/>
+    </bean>
 
 </beans>

@@ -21,4 +21,22 @@ public class AccountServiceImplTest {
         AccountService service = context.getBean("accountService", AccountService.class);
         service.transfer("ccc", "bbb", 100.0f);
     }
+
+    @Test
+    public void test() {
+        AccountServiceImplTest.testFinally();
+    }
+
+    public static int  testFinally() {
+        try {
+            String str = "hello world";
+            System.out.println(str);
+            return 1;
+        }catch (Exception e){
+            System.out.println("Arithmetical Exception");
+        }finally {
+            System.out.println("finally");
+        }
+        return 1;
+    }
 }

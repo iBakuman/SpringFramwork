@@ -12,6 +12,7 @@
         <module name="A_10_SpringWithJunit" />
         <module name="A_03_SpringIOC" />
         <module name="A_04_SpringBean" />
+        <module name="A_12_Proxy" />
         <module name="A_02_FactoryPattern" />
         <module name="A_06_AnnoIOC" />
         <module name="A_01_JDBC" />
@@ -32,6 +33,7 @@
       <module name="A_09_AccountAnnoWithoutXml" target="8" />
       <module name="A_10_SpringWithJunit" target="8" />
       <module name="A_11_Account" target="8" />
+      <module name="A_12_Proxy" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

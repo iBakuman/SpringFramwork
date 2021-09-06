@@ -18,7 +18,7 @@ public class AccountServiceImplTest {
 
     @Test
     public void testTransfer() {
-        AccountService service = context.getBean("accountService", AccountService.class);
+        AccountService service = context.getBean("proxyService", AccountService.class);
         service.transfer("ccc", "bbb", 100.0f);
     }
 

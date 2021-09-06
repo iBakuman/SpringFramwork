@@ -86,7 +86,7 @@ public class AccountDaoImpl implements AccountDao {
         updateAccount(srcAccount);
 
         // 演示出现异常时会出现的问题
-        int a = 1 / 0;
+        //int a = 1 / 0;
         /**
          * 结果：当产生算术异常时，转入账户已经扣掉了转账金额
          * 但是接收账户并没有收到转账金额，这在现实应用中是绝对

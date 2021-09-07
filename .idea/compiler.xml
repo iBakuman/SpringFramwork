@@ -16,6 +16,7 @@
         <module name="A_11_Account" />
         <module name="A_09_AccountAnnoWithoutXml" />
         <module name="A_13_SpringAOP" />
+        <module name="A_14_FourAdviceTypes" />
         <module name="A_12_Proxy" />
         <module name="A_02_FactoryPattern" />
         <module name="A_06_AnnoIOC" />
@@ -36,6 +37,7 @@
       <module name="A_11_Account" target="8" />
       <module name="A_12_Proxy" target="8" />
       <module name="A_13_SpringAOP" target="8" />
+      <module name="A_14_FourAdviceTypes" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

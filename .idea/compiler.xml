@@ -6,18 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="A_11_Account" />
         <module name="A_08_AccountAnnoIOC" />
-        <module name="A_09_AccountAnnoWithoutXml" />
         <module name="A_10_SpringWithJunit" />
         <module name="A_03_SpringIOC" />
         <module name="A_04_SpringBean" />
-        <module name="A_12_Proxy" />
-        <module name="A_02_FactoryPattern" />
-        <module name="A_06_AnnoIOC" />
         <module name="A_01_JDBC" />
         <module name="A_05_DI" />
         <module name="A_07_AccountXmlIOC" />
+        <module name="A_11_Account" />
+        <module name="A_09_AccountAnnoWithoutXml" />
+        <module name="A_13_SpringAOP" />
+        <module name="A_12_Proxy" />
+        <module name="A_02_FactoryPattern" />
+        <module name="A_06_AnnoIOC" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
@@ -34,6 +35,7 @@
       <module name="A_10_SpringWithJunit" target="8" />
       <module name="A_11_Account" target="8" />
       <module name="A_12_Proxy" target="8" />
+      <module name="A_13_SpringAOP" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -14,6 +14,7 @@
       <module fileurl="file://$PROJECT_DIR$/A_10_SpringWithJunit/A_10_SpringWithJunit.iml" filepath="$PROJECT_DIR$/A_10_SpringWithJunit/A_10_SpringWithJunit.iml" />
       <module fileurl="file://$PROJECT_DIR$/A_11_Account/A_11_Account.iml" filepath="$PROJECT_DIR$/A_11_Account/A_11_Account.iml" />
       <module fileurl="file://$PROJECT_DIR$/A_12_Proxy/A_12_Proxy.iml" filepath="$PROJECT_DIR$/A_12_Proxy/A_12_Proxy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/A_13_SpringAOP/A_13_SpringAOP.iml" filepath="$PROJECT_DIR$/A_13_SpringAOP/A_13_SpringAOP.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Spring.iml" filepath="$PROJECT_DIR$/.idea/Spring.iml" />
     </modules>
   </component>

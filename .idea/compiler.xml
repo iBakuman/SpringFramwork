@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="A_08_AccountAnnoIOC" />
         <module name="A_10_SpringWithJunit" />
+        <module name="A_15_AnnotationAOP" />
         <module name="A_03_SpringIOC" />
         <module name="A_04_SpringBean" />
         <module name="A_01_JDBC" />
@@ -38,6 +39,7 @@
       <module name="A_12_Proxy" target="8" />
       <module name="A_13_SpringAOP" target="8" />
       <module name="A_14_FourAdviceTypes" target="8" />
+      <module name="A_15_AnnotationAOP" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

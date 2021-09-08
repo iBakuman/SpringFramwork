@@ -15,7 +15,7 @@ public class AOPTest {
         IaccountService service = context.getBean("accountService", IaccountService.class);
         //service.saveAccount();
         service.updateAccount(0);
-        service.deleteAccount();
+        //service.deleteAccount();
     }
 }
 

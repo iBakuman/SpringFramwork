@@ -19,6 +19,7 @@
         <option value="$PROJECT_DIR$/A_13_SpringAOP/pom.xml" />
         <option value="$PROJECT_DIR$/A_14_FourAdviceTypes/pom.xml" />
         <option value="$PROJECT_DIR$/A_15_AnnotationAOP/pom.xml" />
+        <option value="$PROJECT_DIR$/A_16_JdbcTemplate/pom.xml" />
       </list>
     </option>
   </component>

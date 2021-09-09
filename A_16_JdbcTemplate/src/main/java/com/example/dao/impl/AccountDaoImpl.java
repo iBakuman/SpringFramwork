@@ -3,7 +3,7 @@ package com.example.dao.impl;
 import com.example.dao.IAccountDao;
 import com.example.domain.Account;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
-import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.support.JdbcDaoSupport;
 
 import java.util.List;
 
@@ -11,16 +11,11 @@ import java.util.List;
  * @author Avarice
  * @date 2021/9/9 18:52
  */
-public class AccountDaoImpl implements IAccountDao {
-    JdbcTemplate jdbcTemplate;
-
-    public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
-        this.jdbcTemplate = jdbcTemplate;
-    }
+public class AccountDaoImpl extends JdbcDaoSupport implements IAccountDao {
 
     @Override
     public Account findById(Integer id) {
-        List<Account> accounts = jdbcTemplate.query(
+        List<Account> accounts = getJdbcTemplate().query(
                 "select * from account where id = ?",
                 new BeanPropertyRowMapper<>(Account.class),
                 id
@@ -30,7 +25,7 @@ public class AccountDaoImpl implements IAccountDao {
 
     @Override
     public List<Account> findByName(String name) {
-        return jdbcTemplate.query(
+        return getJdbcTemplate().query(
                 "select * from account where name = ?",
                 new BeanPropertyRowMapper<>(Account.class),
                 name
@@ -42,7 +37,7 @@ public class AccountDaoImpl implements IAccountDao {
         if (null == account) {
             return;
         }
-        jdbcTemplate.update(
+        getJdbcTemplate().update(
                 "update account set name = ?, money = ? where id = ?",
                 account.getName(),
                 account.getMoney(), account.getId()

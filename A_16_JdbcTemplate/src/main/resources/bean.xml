@@ -5,7 +5,7 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="accountDao" class="com.example.dao.impl.AccountDaoImpl">
-        <property name="jdbcTemplate" ref="jdbcTemplate"/>
+        <property name="dataSource" ref="dataSource"/>
     </bean>
 
     <!-- 配置JdbcTemplate -->

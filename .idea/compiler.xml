@@ -14,6 +14,7 @@
         <module name="A_01_JDBC" />
         <module name="A_05_DI" />
         <module name="A_07_AccountXmlIOC" />
+        <module name="A_17_AccountAopXml" />
         <module name="A_11_Account" />
         <module name="A_16_JdbcTemplate" />
         <module name="A_09_AccountAnnoWithoutXml" />
@@ -42,6 +43,7 @@
       <module name="A_14_FourAdviceTypes" target="8" />
       <module name="A_15_AnnotationAOP" target="8" />
       <module name="A_16_JdbcTemplate" target="8" />
+      <module name="A_17_AccountAopXml" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

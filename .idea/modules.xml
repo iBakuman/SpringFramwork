@@ -19,6 +19,7 @@
       <module fileurl="file://$PROJECT_DIR$/A_15_AnnotationAOP/A_15_AnnotationAOP.iml" filepath="$PROJECT_DIR$/A_15_AnnotationAOP/A_15_AnnotationAOP.iml" />
       <module fileurl="file://$PROJECT_DIR$/A_16_JdbcTemplate/A_16_JdbcTemplate.iml" filepath="$PROJECT_DIR$/A_16_JdbcTemplate/A_16_JdbcTemplate.iml" />
       <module fileurl="file://$PROJECT_DIR$/A_17_AccountAopXml/A_17_AccountAopXml.iml" filepath="$PROJECT_DIR$/A_17_AccountAopXml/A_17_AccountAopXml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/A_18_AccountAopAnno/A_18_AccountAopAnno.iml" filepath="$PROJECT_DIR$/A_18_AccountAopAnno/A_18_AccountAopAnno.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Spring.iml" filepath="$PROJECT_DIR$/.idea/Spring.iml" />
     </modules>
   </component>

@@ -22,6 +22,7 @@
         <option value="$PROJECT_DIR$/A_16_JdbcTemplate/pom.xml" />
         <option value="$PROJECT_DIR$/A_17_AccountAopXml/pom.xml" />
         <option value="$PROJECT_DIR$/A_18_AccountAopAnno/pom.xml" />
+        <option value="$PROJECT_DIR$/A_19_PrepTrasactionManage/pom.xml" />
       </list>
     </option>
   </component>

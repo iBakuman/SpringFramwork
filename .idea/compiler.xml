@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="A_22_TxWithoutXml" />
         <module name="A_08_AccountAnnoIOC" />
         <module name="A_18_AccountAopAnno" />
         <module name="A_10_SpringWithJunit" />
@@ -52,6 +53,7 @@
       <module name="A_19_PrepTrasactionManage" target="8" />
       <module name="A_20_TxXml" target="8" />
       <module name="A_21_TxAnno" target="8" />
+      <module name="A_22_TxWithoutXml" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

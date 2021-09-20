@@ -21,6 +21,7 @@
         <module name="A_16_JdbcTemplate" />
         <module name="A_09_AccountAnnoWithoutXml" />
         <module name="A_13_SpringAOP" />
+        <module name="A_20_TxXml" />
         <module name="A_14_FourAdviceTypes" />
         <module name="A_12_Proxy" />
         <module name="A_02_FactoryPattern" />
@@ -48,6 +49,7 @@
       <module name="A_17_AccountAopXml" target="8" />
       <module name="A_18_AccountAopAnno" target="8" />
       <module name="A_19_PrepTrasactionManage" target="8" />
+      <module name="A_20_TxXml" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

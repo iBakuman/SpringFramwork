@@ -5,14 +5,17 @@ import com.example.domain.Account;
 import com.example.service.IAccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * @author Avarice
  * @date 2021/9/15 21:55
  */
 @Service
-// 只读型事务配置
+@Transactional(propagation = Propagation.SUPPORTS, readOnly = true)
 public class AccountServiceImpl implements IAccountService {
+
     @Autowired
     private IAccountDao accountDao;
 
@@ -21,7 +24,10 @@ public class AccountServiceImpl implements IAccountService {
         return accountDao.findById(id);
     }
 
+
     @Override
+    // 读写型事务配置
+    @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
     public void transfer(String srcName, String destName, Float money) {
         // 1.获取转出账户
         Account srcAccount = accountDao.findByName(srcName);

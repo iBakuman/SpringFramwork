@@ -22,6 +22,7 @@
       <module fileurl="file://$PROJECT_DIR$/A_18_AccountAopAnno/A_18_AccountAopAnno.iml" filepath="$PROJECT_DIR$/A_18_AccountAopAnno/A_18_AccountAopAnno.iml" />
       <module fileurl="file://$PROJECT_DIR$/A_19_PrepTrasactionManage/A_19_PrepTrasactionManage.iml" filepath="$PROJECT_DIR$/A_19_PrepTrasactionManage/A_19_PrepTrasactionManage.iml" />
       <module fileurl="file://$PROJECT_DIR$/A_20_TxXml/A_20_TxXml.iml" filepath="$PROJECT_DIR$/A_20_TxXml/A_20_TxXml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/A_21_TxAnno/A_21_TxAnno.iml" filepath="$PROJECT_DIR$/A_21_TxAnno/A_21_TxAnno.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Spring.iml" filepath="$PROJECT_DIR$/.idea/Spring.iml" />
     </modules>
   </component>

@@ -26,6 +26,7 @@
         <module name="A_12_Proxy" />
         <module name="A_02_FactoryPattern" />
         <module name="A_06_AnnoIOC" />
+        <module name="A_21_TxAnno" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
@@ -50,6 +51,7 @@
       <module name="A_18_AccountAopAnno" target="8" />
       <module name="A_19_PrepTrasactionManage" target="8" />
       <module name="A_20_TxXml" target="8" />
+      <module name="A_21_TxAnno" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

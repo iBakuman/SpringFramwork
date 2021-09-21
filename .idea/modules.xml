@@ -24,6 +24,7 @@
       <module fileurl="file://$PROJECT_DIR$/A_20_TxXml/A_20_TxXml.iml" filepath="$PROJECT_DIR$/A_20_TxXml/A_20_TxXml.iml" />
       <module fileurl="file://$PROJECT_DIR$/A_21_TxAnno/A_21_TxAnno.iml" filepath="$PROJECT_DIR$/A_21_TxAnno/A_21_TxAnno.iml" />
       <module fileurl="file://$PROJECT_DIR$/A_22_TxWithoutXml/A_22_TxWithoutXml.iml" filepath="$PROJECT_DIR$/A_22_TxWithoutXml/A_22_TxWithoutXml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/A_23_AccountTx/A_23_AccountTx.iml" filepath="$PROJECT_DIR$/A_23_AccountTx/A_23_AccountTx.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Spring.iml" filepath="$PROJECT_DIR$/.idea/Spring.iml" />
     </modules>
   </component>
